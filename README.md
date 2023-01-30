@@ -20,3 +20,9 @@
 - npm package 설치
   - yarn add react react-dom next sass axios
   - yarn add --dev webpack
+
+
+- ERROR
+  - 2023/01/30
+    - Error: There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering.
+    - -> 랜덤함수 실행 시 서버와 클라이언트의 text context가 같지 않아서 발생하는 오류 
