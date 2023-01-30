@@ -1,0 +1,17 @@
+{
+  "name": "GraphQL",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/zimmyrabbit/GraphQL",
+  "author": "LAPTOP-UF7DLA8Q\\zimmy <zimmyrabbit@naver.com>",
+  "license": "MIT",
+  "private": "true",
+  "workspaces": [
+    "client",
+    "server"
+  ],
+  "scripts": {
+    "client": "yarn workspace client start",
+    "server": "yarn workspace server start"
+  }
+}
