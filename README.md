@@ -11,12 +11,12 @@
   - ReactQuery
   - LowDB
 
---yarn 설치
-npm install -g yarn
+- yarn 설치
+  - npm install -g yarn
 
---yarn 버전 확인
-yarn --version
+- yarn 버전 확인
+  - yarn --version
 
---npm package 설치
-yarn add react react-dom next sass axios
-yarn add --dev webpack
+- npm package 설치
+  - yarn add react react-dom next sass axios
+  - yarn add --dev webpack
