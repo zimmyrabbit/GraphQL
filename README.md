@@ -21,6 +21,12 @@
   - yarn add react react-dom next sass axios
   - yarn add --dev webpack
 
+- yarn 초기화 (package.json 생성)
+  - yarn init  
+
+- package.json에 정의된 스크립트를 실행
+  - yarn run (client)
+
 
 - ERROR
   - 2023/01/30
