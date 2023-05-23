@@ -28,7 +28,22 @@
   - yarn run (client)
 
 
-- ERROR
-  - 2023/01/30
-    - Error: There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering.
-    - -> 랜덤함수 실행 시 서버와 클라이언트의 text context가 같지 않아서 발생하는 오류 
+
+- 2023/01/30
+  - Error: There was an error while hydrating. Because the error happened outside of a Suspense boundary, the entire root will switch to client rendering.
+  - -> 랜덤함수 실행 시 서버와 클라이언트의 text context가 같지 않아서 발생하는 오류 
+
+
+
+- 2023/05/23(express server, json database 생성)
+  cd server
+  yarn init -y
+  -> server패키지에 package.json 파일 생성
+  -> "type": "module" 추가 해줘야 nodejs에서 js es6 모듈 import 하여 사용 가능
+
+  yarn add express cors uuid
+  yarn add --dev nodemon
+  -> 파일 변경 시 자동으로 서버 재시작 해주는 역할 
+
+  nodemon.json
+  -> nodemon이 실행되었을때 어떤것을 감시해서 변경 사항을 반영 및 무시 할 지 정의
