@@ -7,7 +7,7 @@ const basePath = resolve()
 
 const filenames = {
     messages: resolve(basePath, 'src/db/messages.json'),
-    user: resolve(basePath,'src/db/user.json')
+    users: resolve(basePath,'src/db/users.json')
 }
 
 export const readDB = target => {

@@ -1,6 +1,7 @@
 import express from 'express'
 import cors from 'cors'
 import messagesRoutes from './routes/messages.js'
+import userRoute from './routes/users.js'
 
 //express 생성으로 app 생성
 const app = express()
@@ -25,8 +26,8 @@ app.put('/messages/:id', (req,res)=> {
     ...
 })
 */
-
-messagesRoutes.forEach(({method, route, handler}) => {
+const routes = [...messagesRoutes, ...userRoute]
+routes.forEach(({method, route, handler}) => {
     app[method](route,handler)
 })
 

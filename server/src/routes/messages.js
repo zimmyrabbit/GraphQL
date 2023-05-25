@@ -17,7 +17,7 @@ const messagesRoutes = [
     ,{ //GET MESSAGES
         method : 'get'
         , route : '/messages/:id'
-        , handler : ({prams:{id}},res) => {
+        , handler : ({params:{id}},res) => {
             try {
                 const msgs = getMsgs()
                 const msg = msgs.find(m => m.id === id)
